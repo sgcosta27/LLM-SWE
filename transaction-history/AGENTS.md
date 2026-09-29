@@ -28,6 +28,7 @@
 
 ## Git Workflow
 
+- Name feature branches using `issue-number/feature/title`, for example `2/feature/add-category-filtering` for issue #2.
 - Keep commits small and describe the behavior they add or change.
 - Reference the related GitHub issue when appropriate.
 - Review the diff before pushing and avoid unrelated formatting or generated files.
