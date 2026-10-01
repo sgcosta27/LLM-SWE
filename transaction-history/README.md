@@ -4,7 +4,7 @@ Implementation for the Transaction_History project.
 
 ## Category Filtering
 
-`transaction_history.py` provides a dependency-free transaction model and filtering API:
+`src/transaction_history/transaction_history.py` provides a dependency-free transaction model and filtering API:
 
 - `available_categories(transactions)` returns unique category options for a selector.
 - `filter_transactions(transactions, category=...)` matches categories without regard to capitalization or punctuation.
@@ -14,5 +14,6 @@ Implementation for the Transaction_History project.
 Run the focused tests from this folder:
 
 ```powershell
-py -m unittest -v
+$env:PYTHONPATH = "src"
+py -m unittest discover -s src/tests -v
 ```
